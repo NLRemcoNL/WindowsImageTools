@@ -7,9 +7,9 @@
     You must supply the path to the VHD/VHDX file and a valid WIM/ISO. You should also
     include the index number for the Windows Edition to install.
     .EXAMPLE
-    Convert-WIM2VHDX -Path c:\windows8.vhdx -WimPath d:\Source\install.wim -Recovery -DiskLayout UEFI
+    Convert-WIM2VHDX -Path c:\windows8.vhdx -Sourcepath d:\Source\install.wim -Recovery -DiskLayout UEFI
     .EXAMPLE
-    Convert-WIM2VHDX -Path c:\windowsServer.vhdx -WimPath d:\Source\install.wim -index 3 -Size 40GB -force -DiskLayout UEFI
+    Convert-WIM2VHDX -Path c:\windowsServer.vhdx -Sourcepath d:\Source\install.wim -index 3 -Size 40GB -force -DiskLayout UEFI
     #>
   [CmdletBinding(SupportsShouldProcess = $true, 
     PositionalBinding = $false,
